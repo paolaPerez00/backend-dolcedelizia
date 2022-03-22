@@ -6,7 +6,7 @@ const {
   getUsers
 
 
-} = require('../controllers/user');
+} = require('../controllers/users');
 
 const router = Router();
 
