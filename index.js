@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use(require('./routes/users'))
-
-app.listen( 5000, () => {
+var puerto = proceso.env.PORT || 5000;
+app.listen( puerto,"0.0.0.0", () => {
   console.log(`The server is running in port 5000`);
 });
