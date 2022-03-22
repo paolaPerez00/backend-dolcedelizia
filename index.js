@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-app.use(require('./routes/user'))
+app.use(require('./routes/users'))
 
 app.listen( 5000, () => {
   console.log(`The server is running in port 5000`);

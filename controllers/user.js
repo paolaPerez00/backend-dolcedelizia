@@ -116,16 +116,16 @@ const getUsers = async (req, res = response) => {
       'SELECT * FROM Usuario;',
       function (err, results, fields) {
         if (err) {
-          console.log(err)
           //Error al ejecutar la consulta 
           return res.status(500).json({
             success: false,
             result: err,
           });
         } else {
-      
-
-          res.send(results);
+            return res.status(200).json({
+                success: false,
+                result: results,
+              }); 
         }
       }
     );
